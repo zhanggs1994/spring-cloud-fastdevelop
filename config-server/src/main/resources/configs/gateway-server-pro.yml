@@ -1,0 +1,44 @@
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+ribbon:
+  ReadTimeout: 20000
+  ConnectTimeout: 20000
+
+zuul:
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
+
+  routes:
+    user-service:
+      path: /demo1api/**
+      serviceId: demo1-service
+      sensitiveHeaders:
+
+    blog-service:
+      path: /demo2api/**
+      serviceId: demo2-service
+      sensitiveHeaders:
+
+server:
+  port: 8763
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  zipkin:
+    base-url: http://localhost:8764
+#    即以 100% 的概率将链路的数据上传给 Zipkin Server
+  sleuth:
+    sampler :
+      percentage : 1.0
+
+

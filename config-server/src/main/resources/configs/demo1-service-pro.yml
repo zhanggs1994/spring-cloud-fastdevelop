@@ -1,0 +1,34 @@
+server:
+  port: 8861
+foo: demo1-service-8762-22-4
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  zipkin:
+    base-url: http://localhost:8764
+#    即以 100% 的概率将链路的数据上传给 Zipkin Server
+  sleuth:
+    sampler :
+      percentage : 1.0
+#
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/sys-blog?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+#    username: root
+#    password: 123456
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+
+
+
+
+
+
+
+

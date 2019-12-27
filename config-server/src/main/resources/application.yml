@@ -1,0 +1,35 @@
+# remote git
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://git.coding.net/xiaoantimes/xiaoantimes-taichi
+#          searchPaths: backend/repo
+#          username: 124746406@qq.com
+#          password:
+#      label: master
+
+# ---native
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/configs
+  profiles:
+     active: native
+  application:
+    name: config-server
+
+# port
+server:
+  port: 8762
+
+# admin-service Actuator 安全验证关闭
+management:
+  security:
+    enabled: false
+
+
+

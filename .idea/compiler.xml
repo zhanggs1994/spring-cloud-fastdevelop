@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="demo1-service" />
+        <module name="demo2-service" />
+        <module name="eureka-server" />
+        <module name="gateway-server" />
+        <module name="zipkin-server" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
