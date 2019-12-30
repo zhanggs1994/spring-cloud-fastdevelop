@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9aca3c89-e95c-4855-92c9-eb34700589fb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin-server/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configs/admin-server-pro.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configs/demo2-service-pro2.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config-server/src/main/resources/configs/monitor-server-pro.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo1-service/src/main/java/com/rjmgr/demo1service/client/HystrixServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo1-service/src/main/java/com/rjmgr/demo1service/client/hystrix/HystrixServiceClientFB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo2-service/src/main/java/com/rjmgr/demo2service/config/RibbonConfiq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo3-service/src/main/java/com/rjmgr/demo3service/config/RibbonConfiq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo3-service/src/main/java/com/rjmgr/demo3service/web/TestControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo3-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monitor-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configs/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configs/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configs/demo1-service-pro.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configs/demo1-service-pro.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configs/demo2-service-pro.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configs/demo2-service-pro.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configs/gateway-server-pro.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configs/gateway-server-pro.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configs/zipkin-server-pro.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configs/zipkin-server-pro.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo1-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo1-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo1-service/src/main/java/com/rjmgr/demo1service/Demo1ServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo1-service/src/main/java/com/rjmgr/demo1service/Demo1ServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo1-service/src/main/java/com/rjmgr/demo1service/web/TestControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo1-service/src/main/java/com/rjmgr/demo1service/web/TestControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo2-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo2-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo2-service/src/main/java/com/rjmgr/demo2service/Demo2ServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo2-service/src/main/java/com/rjmgr/demo2service/Demo2ServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo2-service/src/main/java/com/rjmgr/demo2service/web/TestControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo2-service/src/main/java/com/rjmgr/demo2service/web/TestControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zipkin-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zipkin-server/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -145,7 +117,7 @@
       <file leaf-file-name="TestControl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo3-service/src/main/java/com/rjmgr/demo3service/web/TestControl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="182">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -258,8 +230,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="257" />
-    <option name="y" value="17" />
+    <option name="x" value="-145" />
+    <option name="y" value="66" />
     <option name="width" value="1440" />
     <option name="height" value="860" />
   </component>
@@ -433,12 +405,20 @@
       <option name="presentableId" value="Default" />
       <updated>1577324554333</updated>
       <workItem from="1577324577417" duration="35116000" />
-      <workItem from="1577691476649" duration="6879000" />
+      <workItem from="1577691476649" duration="7489000" />
     </task>
+    <task id="LOCAL-00001" summary="微服务配置完善">
+      <created>1577698731359</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577698731359</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41995000" />
+    <option name="totallyTimeSpent" value="42605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -461,7 +441,7 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" sideWeight="0.49928367" weight="0.32882273" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928367" visible="true" weight="0.4810298" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928367" visible="true" weight="0.2777778" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49928367" weight="0.32882273" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49928367" weight="0.32882273" />
@@ -519,6 +499,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="微服务配置完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="微服务配置完善" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/config-server/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
@@ -559,6 +543,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -567,6 +554,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -588,6 +580,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -602,6 +597,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -897,7 +895,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo3-service/src/main/java/com/rjmgr/demo3service/web/TestControl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="182">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
