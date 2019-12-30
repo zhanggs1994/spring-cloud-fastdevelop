@@ -1,0 +1,31 @@
+server:
+  port: 8863
+foo: demo2-service2-8863
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  zipkin:
+    base-url: http://localhost:8764
+#
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/sys-blog?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+#    username: root
+#    password: 123456
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+
+logging :
+  file: "logs/demo2-service.log"
+
+
+
+
+
+

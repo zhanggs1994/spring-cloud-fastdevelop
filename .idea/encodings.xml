@@ -2,11 +2,14 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo1-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo2-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo3-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zipkin-server" charset="UTF-8" />
   </component>
 </project>

@@ -17,18 +17,21 @@
         <module>config-server</module>
         <!--网关服务-->
         <module>gateway-server</module>
+        <!--服务链路追踪-->
+        <module>zipkin-server</module>
+        <!--熔断器图表聚合监控-->
+        <module>monitor-server</module>
+        <!--微服务监控-->
+        <module>admin-server</module>
+
+
         <!--业务服务-->
         <module>demo1-service</module>
         <module>demo2-service</module>
+        <module>demo3-service</module>
 
-        <!--<module>blog-service</module>-->
-        <!--<module>gateway-service</module>-->
-        <!--<module>user-service</module>-->
-        <!--<module>monitor-service</module>-->
         <!--<module>uaa-service</module>-->
-        <!--<module>blog-service</module>-->
         <!--<module>common</module>-->
-        <!--<module>admin-service</module>-->
     </modules>
 
 
@@ -53,10 +56,10 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>org.jolokia</groupId>-->
-            <!--<artifactId>jolokia-core</artifactId>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.jolokia</groupId>
+            <artifactId>jolokia-core</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

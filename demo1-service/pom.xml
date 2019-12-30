@@ -45,39 +45,31 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-starter-actuator</artifactId>-->
-        <!--</dependency>-->
 
-        <!--&lt;!&ndash; 开启web&ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-starter-web</artifactId>-->
-        <!--</dependency>-->
+        <!-- 开启web-->
+        <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
 
-        <!--&lt;!&ndash; 开启feign&ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.cloud</groupId>-->
-        <!--<artifactId>spring-cloud-starter-feign</artifactId>-->
-        <!--</dependency>-->
+        <!-- 开启feign-->
+        <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-feign</artifactId>
+        </dependency>
 
-        <!--&lt;!&ndash; dashboard &ndash;&gt;-->
-        <!--&lt;!&ndash; actuator&ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-starter-actuator</artifactId>-->
-        <!--</dependency>-->
-        <!--&lt;!&ndash;hystrix-dashboard&ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.cloud</groupId>-->
-        <!--<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>-->
-        <!--</dependency>-->
-        <!--&lt;!&ndash;hystrix &ndash;&gt;-->
-        <!--<dependency>-->
-        <!--<groupId>org.springframework.cloud</groupId>-->
-        <!--<artifactId>spring-cloud-starter-hystrix</artifactId>-->
-        <!--</dependency>-->
+        <!-- dashboard -->
+        <!-- actuator-->
+        <!--hystrix-dashboard-->
+        <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+        </dependency>
+        <!--hystrix -->
+        <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-hystrix</artifactId>
+        </dependency>
 
         <!--&lt;!&ndash;security&ndash;&gt;-->
         <!--<dependency>-->

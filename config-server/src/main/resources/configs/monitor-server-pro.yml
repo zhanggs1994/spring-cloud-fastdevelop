@@ -1,0 +1,14 @@
+server:
+  port: 8765
+security.basic.enabled: false
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: demo1-service , demo2-service
+  clusterNameExpression: new String("default")
+
+management:
+  security:
+    enabled: false
+logging:
+  file: "logs/monitor-server.log"

@@ -1,6 +1,6 @@
 server:
   port: 8862
-foo: demo2-service-8762-22-4
+foo: demo2-service1-8862
 
 spring:
   rabbitmq:
@@ -21,7 +21,8 @@ spring:
 #      ddl-auto: update
 #    show-sql: true
 
-
+logging :
+  file: "logs/demo2-service.log"
 
 
 

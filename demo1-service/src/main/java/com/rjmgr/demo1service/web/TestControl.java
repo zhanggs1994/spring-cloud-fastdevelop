@@ -1,5 +1,7 @@
 package com.rjmgr.demo1service.web;
 
+import com.rjmgr.demo1service.client.HystrixServiceClient;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -15,10 +17,19 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping(value = "/test")
 public class TestControl {
+    @Autowired
+    HystrixServiceClient hystrixServiceClient;
     @Value("${foo}")
     String foo;
     @RequestMapping(value = "/hi")
     public String hi(){
         return foo;
     }
+
+    @RequestMapping(value = "/hi2")
+    public String hi2(){
+        return hystrixServiceClient.hi();
+    }
+
+
 }

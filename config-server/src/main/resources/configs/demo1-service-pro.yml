@@ -25,7 +25,9 @@ spring:
 #      ddl-auto: update
 #    show-sql: true
 
-
+# admin server logging file
+logging :
+  file: "logs/demo1-service.log"
 
 
 

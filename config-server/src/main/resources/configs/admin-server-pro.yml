@@ -1,0 +1,28 @@
+server:
+  port: 8766
+security:
+  user:
+    name: admin
+    password: 123456
+management:
+  security:
+    enabled: false
+
+spring:
+  boot:
+    admin:
+      routes:
+        endpoints: env,metrics,dump,jolokia,info,configprops,trace,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,activiti
+      #集成 turbine工程
+      turbine:
+        clusters: default
+        location: monitor-server
+
+eureka:
+  instance:
+    metadata-map:
+      user.name: admin
+      user.password: 123456
+
+logging:
+  file: "logs/admin-server.log"
