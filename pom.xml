@@ -11,6 +11,8 @@
 
 
     <modules>
+        <!--公共部分-->
+        <module>common</module>
         <!--注册中心-->
         <module>eureka-server</module>
         <!--配置中心-->
@@ -23,15 +25,14 @@
         <module>monitor-server</module>
         <!--微服务监控-->
         <module>admin-server</module>
-
-
+        <!--日志服务-->
+        <module>logger-server</module>
         <!--业务服务-->
         <module>demo1-service</module>
         <module>demo2-service</module>
         <module>demo3-service</module>
 
-        <!--<module>uaa-service</module>-->
-        <!--<module>common</module>-->
+
     </modules>
 
 

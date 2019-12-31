@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<!--mybatics—generalor 逆向工程配置文件-->
+<generatorConfiguration>
+    <!--&lt;!&ndash;导入属性配置 &ndash;&gt;-->
+    <!--<properties resource="application.yml"></properties>-->
+
+    <classPathEntry location="D:/Maven-Repository/mysql/mysql-connector-java/5.1.45/mysql-connector-java-5.1.45.jar"/>
+
+    <context id="default" targetRuntime="MyBatis3">
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <!--jdbc的数据库连接 -->
+        <jdbcConnection connectionURL="jdbc:mysql://192.168.213.178:3306/testspringcloud" driverClass="com.mysql.jdbc.Driver"
+                        password="root" userId="root"/>
+        <!-- Model模型生成器,用来生成含有主键key的类，记录类 以及查询Example类
+                 targetPackage     指定生成的model生成所在的包名
+                 targetProject     指定在该项目下所在的路径
+             -->
+        <javaModelGenerator targetPackage="com.rjsoft.mgr.model" targetProject="src/main/java"/>
+        <!--Mapper映射文件生成所在的目录 为每一个数据库的表生成对应的SqlMap文件 -->
+        <sqlMapGenerator targetPackage="mybatis.mapper" targetProject="src/main/resources"/>
+        <!-- 客户端代码，生成易于使用的针对Model对象和XML配置文件 的代码
+                   type="ANNOTATEDMAPPER",生成Java Model 和基于注解的Mapper对象
+                   type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
+                   type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
+           -->
+        <javaClientGenerator targetPackage="com.rjsoft.mgr.mapper" targetProject="src/main/java" type="XMLMAPPER"/>
+
+        <table tableName="sys_log" domainObjectName="SysLog"
+               enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+               enableSelectByExample="false" selectByExampleQueryId="false">
+        </table>
+    </context>
+</generatorConfiguration>

@@ -1454,3 +1454,915 @@ Just added and starting handler tuple: StaticListener_For_Aggregator
 2019-12-30 17:32:11.137  INFO 6888 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
 2019-12-30 17:32:11.138  INFO 6888 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
 2019-12-30 17:32:11.138  INFO 6888 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 11:53:51.309  INFO 16792 --- [main] c.r.adminserver.AdminServerApplication   : The following profiles are active: pro
+2019-12-31 11:53:51.343  INFO 16792 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@207ea13: startup date [Tue Dec 31 11:53:51 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3232a28a
+2019-12-31 11:53:52.005  INFO 16792 --- [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'counterFactory' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulConfiguration$ZuulMetricsConfiguration; factoryMethodName=counterFactory; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulConfiguration$ZuulMetricsConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.cloud.netflix.zuul.ZuulConfiguration$ZuulCounterFactoryConfiguration; factoryMethodName=counterFactory; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulConfiguration$ZuulCounterFactoryConfiguration.class]]
+2019-12-31 11:53:52.134  INFO 16792 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e52df8eb-5cea-3521-8545-e4677dbc6e16
+2019-12-31 11:53:52.147  INFO 16792 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-12-31 11:53:52.253  INFO 16792 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$8bed8dc3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-31 11:53:52.352  INFO 16792 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$75daea7f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-31 11:53:52.606  INFO 16792 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8766 (http)
+2019-12-31 11:53:52.613  INFO 16792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-31 11:53:52.614  INFO 16792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-12-31 11:53:52.829  INFO 16792 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-31 11:53:52.829  INFO 16792 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1486 ms
+2019-12-31 11:53:53.719  WARN 16792 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-31 11:53:53.720  INFO 16792 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-31 11:53:53.723  INFO 16792 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4566d121
+2019-12-31 11:53:54.310  INFO 16792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2019-12-31 11:53:54.311  INFO 16792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-31 11:53:54.311  INFO 16792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-31 11:53:54.311  INFO 16792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-12-31 11:53:54.311  INFO 16792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-31 11:53:54.312  INFO 16792 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2019-12-31 11:53:54.312  INFO 16792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-12-31 11:53:54.312  INFO 16792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-12-31 11:53:54.312  INFO 16792 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'turbineStreamServlet' to [/turbine.stream]
+2019-12-31 11:53:54.313  INFO 16792 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'proxyStreamServlet' to [/proxy.stream]
+2019-12-31 11:53:54.313  INFO 16792 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2019-12-31 11:53:54.314  INFO 16792 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'zuulServlet' to [/zuul/*]
+2019-12-31 11:53:54.325  INFO 16792 --- [localhost-startStop-1] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer context listener
+2019-12-31 11:53:54.700  INFO 16792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2019-12-31 11:53:54.889  INFO 16792 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@207ea13: startup date [Tue Dec 31 11:53:51 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3232a28a] and template loader path [classpath:/templates/]
+2019-12-31 11:53:54.889  INFO 16792 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-12-31 11:53:55.197  INFO 16792 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@207ea13: startup date [Tue Dec 31 11:53:51 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@3232a28a
+2019-12-31 11:53:55.269  INFO 16792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix/{path}]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.monitor(java.lang.String,org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2019-12-31 11:53:55.269  INFO 16792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.home(org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2019-12-31 11:53:55.271  INFO 16792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-12-31 11:53:55.272  INFO 16792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-12-31 11:53:55.277  INFO 16792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/turbine/clusters],methods=[GET]}" onto public java.util.Map<java.lang.String, ?> spring.boot.admin.turbine.web.TurbineController.getClusters()
+2019-12-31 11:53:55.278  INFO 16792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/applications/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> de.codecentric.boot.admin.registry.web.RegistryController.get(java.lang.String)
+2019-12-31 11:53:55.279  INFO 16792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/applications],methods=[POST]}" onto public org.springframework.http.ResponseEntity<de.codecentric.boot.admin.model.Application> de.codecentric.boot.admin.registry.web.RegistryController.register(de.codecentric.boot.admin.model.Application)
+2019-12-31 11:53:55.279  INFO 16792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/applications/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> de.codecentric.boot.admin.registry.web.RegistryController.unregister(java.lang.String)
+2019-12-31 11:53:55.279  INFO 16792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/applications],methods=[GET]}" onto public java.util.Collection<de.codecentric.boot.admin.model.Application> de.codecentric.boot.admin.registry.web.RegistryController.applications(java.lang.String)
+2019-12-31 11:53:55.281  INFO 16792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/journal],produces=[application/json]}" onto public java.util.Collection<de.codecentric.boot.admin.event.ClientApplicationEvent> de.codecentric.boot.admin.journal.web.JournalController.getJournal()
+2019-12-31 11:53:55.282  INFO 16792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/journal],produces=[text/event-stream]}" onto public org.springframework.web.servlet.mvc.method.annotation.SseEmitter de.codecentric.boot.admin.journal.web.JournalController.getJournalEvents()
+2019-12-31 11:53:55.298  INFO 16792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-12-31 11:53:55.313  WARN 16792 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+2019-12-31 11:53:55.313  WARN 16792 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Locations list is empty. No resources will be served unless a custom ResourceResolver is configured as an alternative to PathResourceResolver.
+2019-12-31 11:53:55.315  INFO 16792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-31 11:53:55.315  INFO 16792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-31 11:53:55.315  INFO 16792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/all-modules.css] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-31 11:53:55.315  INFO 16792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/all-modules.js] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-31 11:53:55.357  INFO 16792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-12-31 11:53:55.688  INFO 16792 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/css/**'], Ant [pattern='/js/**'], Ant [pattern='/images/**'], Ant [pattern='/webjars/**'], Ant [pattern='/**/favicon.ico'], Ant [pattern='/error']]], []
+2019-12-31 11:53:55.688  INFO 16792 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$LazyEndpointPathRequestMatcher@13278a41, []
+2019-12-31 11:53:55.797  INFO 16792 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33e3bd2e, org.springframework.security.web.context.SecurityContextPersistenceFilter@624b3544, org.springframework.security.web.header.HeaderWriterFilter@61d60e38, org.springframework.security.web.authentication.logout.LogoutFilter@58a7dc4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@340afaf8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1e495414, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ceb7701, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@115c946b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@646d810b, org.springframework.security.web.session.SessionManagementFilter@404ced67, org.springframework.security.web.access.ExceptionTranslationFilter@723742b2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7be94cd6]
+2019-12-31 11:53:55.803  INFO 16792 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@374ccb9, org.springframework.security.web.context.SecurityContextPersistenceFilter@25a5c8e, org.springframework.security.web.header.HeaderWriterFilter@5175d9ad, org.springframework.security.web.authentication.logout.LogoutFilter@4409cae6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@14e750c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@656c5c3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7911cc15, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66713605, org.springframework.security.web.session.SessionManagementFilter@b06d46d, org.springframework.security.web.access.ExceptionTranslationFilter@5403907, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@307cf964]
+2019-12-31 11:53:56.148  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.149  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.150  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-12-31 11:53:56.150  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2019-12-31 11:53:56.152  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-12-31 11:53:56.152  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-12-31 11:53:56.152  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.153  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.154  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-12-31 11:53:56.155  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.155  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-12-31 11:53:56.155  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.156  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.156  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.157  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2019-12-31 11:53:56.157  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2019-12-31 11:53:56.158  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2019-12-31 11:53:56.158  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2019-12-31 11:53:56.158  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.158  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-12-31 11:53:56.159  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.159  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.159  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2019-12-31 11:53:56.160  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-12-31 11:53:56.160  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.160  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-12-31 11:53:56.161  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/routes || /routes.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-12-31 11:53:56.161  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-12-31 11:53:56.161  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2019-12-31 11:53:56.162  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2019-12-31 11:53:56.162  INFO 16792 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2019-12-31 11:53:56.317  WARN 16792 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2019-12-31 11:53:56.318  INFO 16792 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-12-31 11:53:56.366  INFO 16792 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'updateTaskScheduler'
+2019-12-31 11:53:56.394  INFO 16792 --- [main] d.c.boot.admin.web.PrefixHandlerMapping  : Mapped "{[/api/turbine/clusters],methods=[GET]}" onto public java.util.Map<java.lang.String, ?> spring.boot.admin.turbine.web.TurbineController.getClusters()
+2019-12-31 11:53:56.395  INFO 16792 --- [main] d.c.boot.admin.web.PrefixHandlerMapping  : Mapped "{[/api/applications/{id}],methods=[GET]}" onto public org.springframework.http.ResponseEntity<?> de.codecentric.boot.admin.registry.web.RegistryController.get(java.lang.String)
+2019-12-31 11:53:56.395  INFO 16792 --- [main] d.c.boot.admin.web.PrefixHandlerMapping  : Mapped "{[/api/applications],methods=[POST]}" onto public org.springframework.http.ResponseEntity<de.codecentric.boot.admin.model.Application> de.codecentric.boot.admin.registry.web.RegistryController.register(de.codecentric.boot.admin.model.Application)
+2019-12-31 11:53:56.395  INFO 16792 --- [main] d.c.boot.admin.web.PrefixHandlerMapping  : Mapped "{[/api/applications/{id}],methods=[DELETE]}" onto public org.springframework.http.ResponseEntity<?> de.codecentric.boot.admin.registry.web.RegistryController.unregister(java.lang.String)
+2019-12-31 11:53:56.396  INFO 16792 --- [main] d.c.boot.admin.web.PrefixHandlerMapping  : Mapped "{[/api/applications],methods=[GET]}" onto public java.util.Collection<de.codecentric.boot.admin.model.Application> de.codecentric.boot.admin.registry.web.RegistryController.applications(java.lang.String)
+2019-12-31 11:53:56.396  INFO 16792 --- [main] d.c.boot.admin.web.PrefixHandlerMapping  : Mapped "{[/api/journal],produces=[application/json]}" onto public java.util.Collection<de.codecentric.boot.admin.event.ClientApplicationEvent> de.codecentric.boot.admin.journal.web.JournalController.getJournal()
+2019-12-31 11:53:56.396  INFO 16792 --- [main] d.c.boot.admin.web.PrefixHandlerMapping  : Mapped "{[/api/journal],produces=[text/event-stream]}" onto public org.springframework.web.servlet.mvc.method.annotation.SseEmitter de.codecentric.boot.admin.journal.web.JournalController.getJournalEvents()
+2019-12-31 11:53:56.487  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-12-31 11:53:56.495  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-12-31 11:53:56.497  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-12-31 11:53:56.498  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2019-12-31 11:53:56.498  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2019-12-31 11:53:56.498  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2019-12-31 11:53:56.499  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'zuulEndpoint' has been autodetected for JMX exposure
+2019-12-31 11:53:56.500  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-12-31 11:53:56.501  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-12-31 11:53:56.512  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2019-12-31 11:53:56.519  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2019-12-31 11:53:56.524  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-12-31 11:53:56.531  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'zuulEndpoint': registering with JMX server as MBean [org.springframework.cloud.netflix.zuul:name=zuulEndpoint,type=RoutesEndpoint]
+2019-12-31 11:53:56.532  WARN 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with key 'zuulEndpoint' has been registered as an MBean but has no exposed attributes or operations
+2019-12-31 11:53:56.533  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=207ea13,type=ConfigurationPropertiesRebinder]
+2019-12-31 11:53:56.536  INFO 16792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2019-12-31 11:53:56.906  INFO 16792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2019-12-31 11:53:56.909  INFO 16792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: jolokia:type=Config is already registered. Adding it with jolokia:type=Config,uuid=bf829a3f-52ad-42bf-abe5-45084168836b, but you should revise your setup in order to either use a qualifier or ensure, that only a single agent gets registered (otherwise history functionality might not work)
+2019-12-31 11:53:56.910  INFO 16792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Cannot register (legacy) MBean handler for config store with name jmx4perl:type=Config since it already exists. This is the case if another agent has been already started within the same JVM. The registration is skipped.
+2019-12-31 11:53:56.910  INFO 16792 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Jolokia Discovery MBean registration is skipped because there is already one registered.
+2019-12-31 11:53:56.963  INFO 16792 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2019-12-31 11:53:56.967  INFO 16792 --- [main] o.s.c.n.turbine.SpringAggregatorFactory  : Could not find monitors: []
+2019-12-31 11:53:57.037  INFO 16792 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : Registering event handler for cluster monitor: StaticListener_For_Aggregator
+2019-12-31 11:53:57.038  INFO 16792 --- [main] c.n.t.handler.TurbineDataDispatcher      : 
+
+Just added and starting handler tuple: StaticListener_For_Aggregator
+2019-12-31 11:53:57.038  INFO 16792 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : All event handlers for cluster monitor: [StaticListener_For_Aggregator]
+2019-12-31 11:53:57.038  INFO 16792 --- [main] c.n.t.monitor.cluster.ClusterMonitor     : Starting up the cluster monitor for default_agg
+2019-12-31 11:53:57.040  INFO 16792 --- [main] c.n.t.discovery.InstanceObservable       : Starting InstanceObservable at frequency: 60000 millis
+2019-12-31 11:53:57.040  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 11:53:57.041  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 11:53:57.041  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 11:53:57.041  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 11:53:57.046  INFO 16792 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2019-12-31 11:53:57.073  INFO 16792 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2019-12-31 11:53:57.109  INFO 16792 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2019-12-31 11:53:57.109  INFO 16792 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2019-12-31 11:53:57.183  INFO 16792 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2019-12-31 11:53:57.183  INFO 16792 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2019-12-31 11:53:57.308  INFO 16792 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 11:53:57.545  INFO 16792 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2019-12-31 11:53:57.545  INFO 16792 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2019-12-31 11:53:57.545  INFO 16792 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2019-12-31 11:53:57.545  INFO 16792 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2019-12-31 11:53:57.545  INFO 16792 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2019-12-31 11:53:57.545  INFO 16792 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2019-12-31 11:53:57.545  INFO 16792 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2019-12-31 11:53:57.618  INFO 16792 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2019-12-31 11:53:57.619  INFO 16792 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2019-12-31 11:53:57.620  INFO 16792 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-12-31 11:53:57.644  INFO 16792 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1577764437644 with initial instances count: 6
+2019-12-31 11:53:57.660  INFO 16792 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application admin-server with eureka with status UP
+2019-12-31 11:53:57.661  INFO 16792 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1577764437661, current=UP, previous=STARTING]
+2019-12-31 11:53:57.662  INFO 16792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/Ryan:admin-server:8766: registering service...
+2019-12-31 11:53:57.668  INFO 16792 --- [main] d.c.b.a.registry.ApplicationRegistry     : New Application Application [id=ac798e6c, name=ZIPKIN-SERVER, managementUrl=http://Ryan:8764, healthUrl=http://Ryan:8764/health, serviceUrl=http://Ryan:8764] registered 
+2019-12-31 11:53:57.674  INFO 16792 --- [main] d.c.b.a.registry.ApplicationRegistry     : New Application Application [id=317d1239, name=DEMO2-SERVICE, managementUrl=http://Ryan:8862, healthUrl=http://Ryan:8862/health, serviceUrl=http://Ryan:8862] registered 
+2019-12-31 11:53:57.674  INFO 16792 --- [main] d.c.b.a.registry.ApplicationRegistry     : New Application Application [id=e1deac25, name=DEMO2-SERVICE, managementUrl=http://Ryan:8863, healthUrl=http://Ryan:8863/health, serviceUrl=http://Ryan:8863] registered 
+2019-12-31 11:53:57.675  INFO 16792 --- [main] d.c.b.a.registry.ApplicationRegistry     : New Application Application [id=5e5f5eb5, name=LOGGER-SERVER, managementUrl=http://Ryan:8767, healthUrl=http://Ryan:8767/health, serviceUrl=http://Ryan:8767] registered 
+2019-12-31 11:53:57.675  INFO 16792 --- [main] d.c.b.a.registry.ApplicationRegistry     : New Application Application [id=292af6dd, name=DEMO1-SERVICE, managementUrl=http://Ryan:8861, healthUrl=http://Ryan:8861/health, serviceUrl=http://Ryan:8861] registered 
+2019-12-31 11:53:57.676  INFO 16792 --- [main] d.c.b.a.registry.ApplicationRegistry     : New Application Application [id=2a0a5ec5, name=GATEWAY-SERVER, managementUrl=http://Ryan:8763, healthUrl=http://Ryan:8763/health, serviceUrl=http://Ryan:8763] registered 
+2019-12-31 11:53:57.691  INFO 16792 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-SERVER/Ryan:admin-server:8766 - registration status: 204
+2019-12-31 11:53:57.714  INFO 16792 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2019-12-31 11:53:57.717  INFO 16792 --- [main] ration$HystrixMetricsPollerConfiguration : Starting poller
+2019-12-31 11:53:57.774  INFO 16792 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8766 (http)
+2019-12-31 11:53:57.775  INFO 16792 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8766
+2019-12-31 11:53:57.781  INFO 16792 --- [main] c.r.adminserver.AdminServerApplication   : Started AdminServerApplication in 9.087 seconds (JVM running for 10.137)
+2019-12-31 11:53:57.952  INFO 16792 --- [RMI TCP Connection(2)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 11:53:58.557  INFO 16792 --- [RMI TCP Connection(2)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 11:54:27.630  INFO 16792 --- [DiscoveryClient-CacheRefreshExecutor-0] d.c.b.a.registry.ApplicationRegistry     : New Application Application [id=fcbb2773, name=MONITOR-SERVER, managementUrl=http://Ryan:8765, healthUrl=http://Ryan:8765/health, serviceUrl=http://Ryan:8765] registered 
+2019-12-31 11:54:27.631  INFO 16792 --- [DiscoveryClient-CacheRefreshExecutor-0] d.c.b.a.registry.ApplicationRegistry     : New Application Application [id=d57f22f7, name=ADMIN-SERVER, managementUrl=http://Ryan:8766, healthUrl=http://Ryan:8766/health, serviceUrl=http://Ryan:8766] registered 
+2019-12-31 11:54:27.805  INFO 16792 --- [http-nio-8766-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-12-31 11:54:27.805  INFO 16792 --- [http-nio-8766-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-12-31 11:54:27.830  INFO 16792 --- [http-nio-8766-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2019-12-31 11:54:27.844  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/turbine/stream/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.845  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/health/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.845  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/env/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.845  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/metrics/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.845  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/dump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.845  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/jolokia/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.845  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/info/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.845  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/configprops/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.845  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/trace/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.845  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/logfile/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.845  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/refresh/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.845  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/flyway/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.845  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/liquibase/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/heapdump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/loggers/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/auditevents/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/hystrix.stream/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/292af6dd/activiti/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/health/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/env/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/metrics/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/dump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/jolokia/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/info/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/configprops/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.848  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/trace/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/logfile/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/refresh/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/flyway/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/liquibase/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/heapdump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/loggers/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/auditevents/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/hystrix.stream/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/317d1239/activiti/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/health/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/env/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/metrics/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.852  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/dump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.853  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/jolokia/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/info/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/configprops/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/trace/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/logfile/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/refresh/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/flyway/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/liquibase/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/heapdump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/loggers/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/auditevents/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/hystrix.stream/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/2a0a5ec5/activiti/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/health/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/env/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/metrics/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/dump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/jolokia/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/info/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/configprops/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.854  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/trace/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/logfile/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/refresh/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/flyway/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/liquibase/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/heapdump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/loggers/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/auditevents/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/hystrix.stream/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/fcbb2773/activiti/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/health/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/env/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/metrics/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/dump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/jolokia/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/info/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/configprops/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/trace/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/logfile/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/refresh/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.855  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/flyway/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/liquibase/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/heapdump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/loggers/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/auditevents/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/hystrix.stream/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/e1deac25/activiti/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/health/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/env/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/metrics/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/dump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/jolokia/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/info/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/configprops/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.856  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/trace/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/logfile/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/refresh/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/flyway/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/liquibase/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/heapdump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/loggers/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/auditevents/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/hystrix.stream/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/ac798e6c/activiti/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/health/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/env/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/metrics/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.858  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/dump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/jolokia/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/info/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/configprops/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/trace/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/logfile/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/refresh/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/flyway/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/liquibase/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/heapdump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/loggers/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/auditevents/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/hystrix.stream/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/d57f22f7/activiti/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.859  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/health/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.860  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/env/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/metrics/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/dump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/jolokia/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/info/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/configprops/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/trace/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/logfile/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/refresh/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/flyway/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/liquibase/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/heapdump/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/loggers/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/auditevents/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/hystrix.stream/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:27.861  INFO 16792 --- [http-nio-8766-exec-2] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/api/applications/5e5f5eb5/activiti/**] onto handler of type [class de.codecentric.boot.admin.zuul.OptionsDispatchingZuulController]
+2019-12-31 11:54:57.040  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 11:54:57.040  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 11:54:57.040  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 11:54:57.040  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 11:55:57.041  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 11:55:57.041  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 11:55:57.041  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 11:55:57.041  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 11:56:57.041  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 11:56:57.041  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 11:56:57.041  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 11:56:57.041  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 11:57:57.041  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 11:57:57.041  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 11:57:57.041  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 11:57:57.041  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 11:58:57.042  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 11:58:57.042  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 11:58:57.042  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 11:58:57.042  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 11:58:57.554  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 11:59:07.824  INFO 16792 --- [http-nio-8766-exec-8] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 11:59:08.277  INFO 16792 --- [http-nio-8766-exec-8] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 11:59:57.042  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 11:59:57.042  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 11:59:57.042  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 11:59:57.042  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:00:57.043  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:00:57.043  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:00:57.043  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:00:57.043  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:01:57.043  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:01:57.043  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:01:57.043  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:01:57.043  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:02:57.044  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:02:57.044  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:02:57.044  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:02:57.044  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:03:57.044  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:03:57.044  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:03:57.044  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:03:57.044  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:03:57.563  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 12:04:07.830  INFO 16792 --- [http-nio-8766-exec-1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 12:04:08.291  INFO 16792 --- [http-nio-8766-exec-1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 12:04:57.044  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:04:57.044  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:04:57.044  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:04:57.044  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:05:57.045  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:05:57.045  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:05:57.045  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:05:57.045  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:06:57.045  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:06:57.045  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:06:57.045  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:06:57.045  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:07:57.046  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:07:57.046  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:07:57.046  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:07:57.046  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:08:57.046  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:08:57.046  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:08:57.046  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:08:57.046  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:08:57.571  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 12:09:07.835  INFO 16792 --- [http-nio-8766-exec-7] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 12:09:08.291  INFO 16792 --- [http-nio-8766-exec-7] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 12:09:57.047  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:09:57.047  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:09:57.047  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:09:57.047  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:10:57.047  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:10:57.047  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:10:57.047  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:10:57.047  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:11:57.048  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:11:57.048  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:11:57.048  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:11:57.048  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:12:57.048  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:12:57.048  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:12:57.048  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:12:57.048  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:13:57.048  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:13:57.048  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:13:57.048  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:13:57.048  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:13:57.579  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 12:14:07.844  INFO 16792 --- [http-nio-8766-exec-10] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 12:14:08.301  INFO 16792 --- [http-nio-8766-exec-10] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 12:14:57.049  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:14:57.049  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:14:57.049  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:14:57.049  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:15:57.049  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:15:57.049  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:15:57.049  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:15:57.049  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:16:57.050  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:16:57.050  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:16:57.050  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:16:57.050  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:17:57.050  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:17:57.050  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:17:57.050  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:17:57.050  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:18:57.051  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:18:57.051  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:18:57.051  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:18:57.051  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:18:57.588  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 12:19:07.848  INFO 16792 --- [http-nio-8766-exec-4] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 12:19:08.299  INFO 16792 --- [http-nio-8766-exec-4] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 12:19:57.051  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:19:57.051  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:19:57.051  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:19:57.051  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:20:57.051  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:20:57.051  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:20:57.051  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:20:57.051  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:21:57.052  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:21:57.052  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:21:57.052  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:21:57.052  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:22:57.062  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:22:57.062  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:22:57.062  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:22:57.062  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:23:57.063  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:23:57.063  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:23:57.063  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:23:57.063  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:23:57.596  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 12:24:07.858  INFO 16792 --- [http-nio-8766-exec-3] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 12:24:08.319  INFO 16792 --- [http-nio-8766-exec-3] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 12:24:57.063  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:24:57.063  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:24:57.063  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:24:57.063  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:25:57.064  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:25:57.064  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:25:57.064  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:25:57.064  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:26:57.064  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:26:57.064  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:26:57.064  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:26:57.064  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:27:57.064  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:27:57.064  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:27:57.064  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:27:57.064  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:28:57.065  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:28:57.065  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:28:57.065  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:28:57.065  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:28:57.604  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 12:29:07.862  INFO 16792 --- [http-nio-8766-exec-7] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 12:29:08.317  INFO 16792 --- [http-nio-8766-exec-7] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 12:29:57.065  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:29:57.065  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:29:57.065  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:29:57.065  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:30:57.066  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:30:57.066  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:30:57.066  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:30:57.066  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:31:57.066  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:31:57.066  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:31:57.066  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:31:57.066  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:32:57.067  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:32:57.067  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:32:57.067  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:32:57.067  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:33:57.067  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:33:57.067  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:33:57.067  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:33:57.067  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:33:57.612  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 12:34:07.873  INFO 16792 --- [http-nio-8766-exec-10] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 12:34:08.327  INFO 16792 --- [http-nio-8766-exec-10] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 12:34:57.067  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:34:57.067  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:34:57.067  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:34:57.067  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:35:57.068  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:35:57.068  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:35:57.068  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:35:57.068  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:36:57.068  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:36:57.068  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:36:57.068  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:36:57.068  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:37:57.069  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:37:57.069  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:37:57.069  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:37:57.069  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:38:57.069  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:38:57.069  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:38:57.069  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:38:57.069  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:38:57.620  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 12:39:07.877  INFO 16792 --- [http-nio-8766-exec-4] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 12:39:08.325  INFO 16792 --- [http-nio-8766-exec-4] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 12:39:57.070  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:39:57.070  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:39:57.070  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:39:57.070  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:40:57.070  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:40:57.070  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:40:57.070  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:40:57.070  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:41:57.070  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:41:57.070  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:41:57.070  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:41:57.070  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:42:57.071  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:42:57.071  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:42:57.071  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:42:57.071  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:43:57.071  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:43:57.071  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:43:57.071  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:43:57.071  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:43:57.628  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 12:44:07.884  INFO 16792 --- [http-nio-8766-exec-2] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 12:44:08.337  INFO 16792 --- [http-nio-8766-exec-2] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 12:44:57.072  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:44:57.072  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:44:57.072  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:44:57.072  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:45:57.072  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:45:57.072  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:45:57.072  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:45:57.072  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:46:57.073  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:46:57.073  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:46:57.073  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:46:57.073  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:47:57.073  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:47:57.073  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:47:57.073  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:47:57.073  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:48:57.073  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:48:57.073  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:48:57.073  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:48:57.073  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:48:57.637  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 12:49:07.893  INFO 16792 --- [http-nio-8766-exec-9] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 12:49:08.348  INFO 16792 --- [http-nio-8766-exec-9] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 12:49:57.074  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:49:57.074  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:49:57.074  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:49:57.074  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:50:57.074  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:50:57.074  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:50:57.074  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:50:57.074  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:51:57.075  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:51:57.075  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:51:57.075  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:51:57.075  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:52:57.075  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:52:57.075  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:52:57.075  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:52:57.075  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:53:57.076  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:53:57.076  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:53:57.076  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:53:57.076  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:53:57.645  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 12:54:07.901  INFO 16792 --- [http-nio-8766-exec-10] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 12:54:08.356  INFO 16792 --- [http-nio-8766-exec-10] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 12:54:57.076  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:54:57.076  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:54:57.076  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:54:57.076  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:55:57.077  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:55:57.077  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:55:57.077  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:55:57.077  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:56:57.077  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:56:57.077  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:56:57.077  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:56:57.077  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:57:57.077  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:57:57.077  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:57:57.077  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:57:57.077  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:58:57.078  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:58:57.078  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:58:57.078  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:58:57.078  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 12:58:57.653  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 12:59:07.907  INFO 16792 --- [http-nio-8766-exec-4] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 12:59:08.369  INFO 16792 --- [http-nio-8766-exec-4] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 12:59:57.078  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 12:59:57.078  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 12:59:57.078  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 12:59:57.078  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:00:57.079  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:00:57.079  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:00:57.079  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:00:57.079  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:01:57.079  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:01:57.079  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:01:57.079  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:01:57.079  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:02:57.080  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:02:57.080  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:02:57.080  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:02:57.080  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:03:57.080  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:03:57.080  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:03:57.080  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:03:57.080  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:03:57.661  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 13:04:07.919  INFO 16792 --- [http-nio-8766-exec-2] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 13:04:08.385  INFO 16792 --- [http-nio-8766-exec-2] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 13:04:57.080  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:04:57.080  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:04:57.080  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:04:57.080  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:05:57.081  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:05:57.081  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:05:57.081  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:05:57.081  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:06:57.081  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:06:57.081  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:06:57.081  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:06:57.081  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:07:57.082  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:07:57.082  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:07:57.082  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:07:57.082  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:08:57.082  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:08:57.082  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:08:57.082  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:08:57.082  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:08:57.669  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 13:09:07.923  INFO 16792 --- [http-nio-8766-exec-9] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 13:09:08.381  INFO 16792 --- [http-nio-8766-exec-9] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 13:09:57.083  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:09:57.083  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:09:57.083  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:09:57.083  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:10:57.083  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:10:57.083  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:10:57.083  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:10:57.083  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:11:57.083  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:11:57.083  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:11:57.083  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:11:57.083  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:12:57.084  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:12:57.084  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:12:57.084  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:12:57.084  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:13:57.084  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:13:57.084  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:13:57.084  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:13:57.084  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:13:57.677  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 13:14:07.931  INFO 16792 --- [http-nio-8766-exec-5] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 13:14:08.385  INFO 16792 --- [http-nio-8766-exec-5] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 13:14:57.085  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:14:57.085  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:14:57.085  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:14:57.085  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:15:57.085  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:15:57.085  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:15:57.085  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:15:57.085  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:16:57.086  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:16:57.086  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:16:57.086  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:16:57.086  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:17:57.086  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:17:57.086  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:17:57.086  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:17:57.086  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:18:57.086  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:18:57.086  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:18:57.086  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:18:57.086  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:18:57.685  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 13:19:07.938  INFO 16792 --- [http-nio-8766-exec-3] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 13:19:08.393  INFO 16792 --- [http-nio-8766-exec-3] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 13:19:57.087  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:19:57.087  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:19:57.087  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:19:57.087  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:20:57.087  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:20:57.087  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:20:57.087  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:20:57.087  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:21:57.088  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:21:57.088  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:21:57.088  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:21:57.088  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:22:57.088  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:22:57.088  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:22:57.088  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:22:57.088  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:23:57.089  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:23:57.089  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:23:57.089  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:23:57.089  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:23:57.694  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 13:24:07.944  INFO 16792 --- [http-nio-8766-exec-2] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 13:24:08.396  INFO 16792 --- [http-nio-8766-exec-2] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 13:24:57.089  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:24:57.089  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:24:57.089  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:24:57.089  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:25:57.089  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:25:57.089  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:25:57.089  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:25:57.089  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:26:57.090  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:26:57.090  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:26:57.090  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:26:57.090  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:27:57.090  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:27:57.090  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:27:57.090  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:27:57.090  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:28:57.091  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:28:57.091  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:28:57.091  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:28:57.091  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:28:57.702  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 13:29:07.951  INFO 16792 --- [http-nio-8766-exec-9] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 13:29:08.410  INFO 16792 --- [http-nio-8766-exec-9] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 13:29:57.091  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:29:57.091  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:29:57.091  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:29:57.091  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:30:57.092  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:30:57.092  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:30:57.092  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:30:57.092  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:31:57.092  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:31:57.092  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:31:57.092  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:31:57.092  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:32:57.092  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:32:57.092  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:32:57.092  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:32:57.092  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:33:57.093  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:33:57.093  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:33:57.093  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:33:57.093  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:33:57.710  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 13:34:07.959  INFO 16792 --- [http-nio-8766-exec-5] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 13:34:08.420  INFO 16792 --- [http-nio-8766-exec-5] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 13:34:57.093  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:34:57.093  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:34:57.093  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:34:57.093  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:35:57.094  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:35:57.094  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:35:57.094  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:35:57.094  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:36:57.094  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:36:57.094  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:36:57.094  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:36:57.094  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:37:57.095  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:37:57.095  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:37:57.095  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:37:57.095  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:38:57.095  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:38:57.095  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:38:57.095  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:38:57.095  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:38:57.718  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 13:39:07.968  INFO 16792 --- [http-nio-8766-exec-3] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 13:39:08.422  INFO 16792 --- [http-nio-8766-exec-3] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 13:39:57.096  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:39:57.097  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:39:57.097  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:39:57.097  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:40:57.096  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:40:57.096  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:40:57.096  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:40:57.096  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:41:57.096  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:41:57.096  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:41:57.096  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:41:57.096  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:42:57.097  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:42:57.097  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:42:57.097  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:42:57.097  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:43:57.097  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:43:57.097  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:43:57.097  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:43:57.097  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:43:57.726  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 13:44:07.976  INFO 16792 --- [http-nio-8766-exec-6] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 13:44:08.421  INFO 16792 --- [http-nio-8766-exec-6] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 13:44:57.098  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:44:57.098  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:44:57.098  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:44:57.098  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:45:57.098  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:45:57.098  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:45:57.098  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:45:57.098  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:46:57.099  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:46:57.099  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:46:57.099  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:46:57.099  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:47:57.099  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:47:57.099  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:47:57.099  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:47:57.099  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:48:57.099  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:48:57.099  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:48:57.099  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:48:57.099  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:48:57.734  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 13:49:07.982  INFO 16792 --- [http-nio-8766-exec-10] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 13:49:08.437  INFO 16792 --- [http-nio-8766-exec-10] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 13:49:57.100  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:49:57.100  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:49:57.100  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:49:57.100  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:50:57.100  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:50:57.100  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:50:57.100  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:50:57.100  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:51:57.101  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:51:57.101  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:51:57.101  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:51:57.101  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:52:57.101  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:52:57.101  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:52:57.101  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:52:57.101  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:53:57.102  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:53:57.102  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:53:57.102  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:53:57.102  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:53:57.743  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 13:54:07.991  INFO 16792 --- [http-nio-8766-exec-5] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 13:54:08.443  INFO 16792 --- [http-nio-8766-exec-5] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 13:54:57.102  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:54:57.102  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:54:57.102  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:54:57.102  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:55:57.102  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:55:57.102  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:55:57.102  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:55:57.102  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:56:57.103  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:56:57.103  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:56:57.103  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:56:57.103  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:57:57.103  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:57:57.103  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:57:57.103  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:57:57.103  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:58:57.104  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:58:57.104  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:58:57.104  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:58:57.104  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 13:58:57.751  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 13:59:07.996  INFO 16792 --- [http-nio-8766-exec-3] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 13:59:08.473  INFO 16792 --- [http-nio-8766-exec-3] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 13:59:57.104  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 13:59:57.104  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 13:59:57.104  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 13:59:57.104  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 14:00:57.105  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 14:00:57.105  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 14:00:57.105  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 14:00:57.105  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 14:01:57.105  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 14:01:57.105  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 14:01:57.105  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 14:01:57.105  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 14:02:57.105  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 14:02:57.105  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 14:02:57.105  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 14:02:57.105  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 14:03:57.106  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 14:03:57.106  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 14:03:57.106  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 14:03:57.106  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 14:03:57.759  INFO 16792 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2019-12-31 14:04:08.001  INFO 16792 --- [http-nio-8766-exec-6] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2019-12-31 14:04:08.483  INFO 16792 --- [http-nio-8766-exec-6] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=admin-server, profiles=[pro], label=null, version=null, state=null
+2019-12-31 14:04:57.106  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 14:04:57.106  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 14:04:57.106  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 14:04:57.106  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0
+2019-12-31 14:05:57.107  INFO 16792 --- [Timer-0] o.s.c.n.t.CommonsInstanceDiscovery       : No apps configured, returning an empty instance list
+2019-12-31 14:05:57.107  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Retrieved hosts from InstanceDiscovery: 0
+2019-12-31 14:05:57.107  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Found hosts that have been previously terminated: 0
+2019-12-31 14:05:57.107  INFO 16792 --- [Timer-0] c.n.t.discovery.InstanceObservable       : Hosts up:0, hosts down: 0

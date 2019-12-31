@@ -1,5 +1,6 @@
 package com.rjmgr.demo1service.web;
 
+import com.rjmgr.common.annotation.SysLogger;
 import com.rjmgr.demo1service.client.HystrixServiceClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,11 +22,13 @@ public class TestControl {
     HystrixServiceClient hystrixServiceClient;
     @Value("${foo}")
     String foo;
+
+    @SysLogger("demo1@hi")
     @RequestMapping(value = "/hi")
     public String hi(){
         return foo;
     }
-
+    @SysLogger("demo1@hi2")
     @RequestMapping(value = "/hi2")
     public String hi2(){
         return hystrixServiceClient.hi();

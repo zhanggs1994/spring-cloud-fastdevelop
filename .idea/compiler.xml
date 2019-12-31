@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="admin-server" />
+        <module name="common" />
         <module name="config-server" />
         <module name="demo1-service" />
         <module name="demo2-service" />
         <module name="demo3-service" />
         <module name="eureka-server" />
         <module name="gateway-server" />
+        <module name="logger-server" />
         <module name="monitor-server" />
         <module name="zipkin-server" />
       </profile>
