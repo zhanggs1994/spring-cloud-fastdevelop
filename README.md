@@ -55,7 +55,7 @@ enabled 设置为 false 。
   -  demo2 8862
   - demo3 8863  demo3 和demo2为统一工程，测试负载均衡。
 
-### 待实现配置
+### 进阶配置配置
 
 - 进阶扩展1：日志、监控、权限......  
 - 进阶扩展2：负载均衡   高可用注册中心、高可用配置中心......
@@ -75,3 +75,13 @@ enabled 设置为 false 。
 | **LOGGER-SERVER**  | **n/a** (1) | (1)  | **UP** (1) - [Ryan:logger-server:8767](http://ryan:8767/info) |
 | **MONITOR-SERVER** | **n/a** (1) | (1)  | **UP** (1) - [Ryan:monitor-server:8765](http://ryan:8765/info) |
 | **ZIPKIN-SERVER**  | **n/a** (1) | (1)  | **UP** (1) - [Ryan:zipkin-server:8764](http://ryan:8764/info) |
+
+### 业务微服务集成，需要配置的东西
+
+* 配置eureka 客户端，向注册中心注册
+* 配置 配置中心相关配置
+* 链路追踪相关配置
+*  聚合熔断监控服务相关配置
+* 微服务监控相关配置
+* 全局会话共享相关配置
+* 全局日志相关配置
