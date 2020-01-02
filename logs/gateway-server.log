@@ -1889,3 +1889,361 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2019-12-31 14:01:28.018  INFO [gateway-server,,,] 16924 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2019-12-31 14:02:27.986  INFO [gateway-server,bcf2b869d5dd5cac,bcf2b869d5dd5cac,false] 16924 --- [http-nio-8763-exec-5] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
 2019-12-31 14:02:28.438  INFO [gateway-server,bcf2b869d5dd5cac,bcf2b869d5dd5cac,false] 16924 --- [http-nio-8763-exec-5] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=gateway-server, profiles=[pro], label=null, version=null, state=null
+2020-01-02 11:21:25.690  INFO [gateway-server,,,] 15716 --- [main] c.r.g.GatewayServerApplication           : The following profiles are active: pro
+2020-01-02 11:21:25.717  INFO [gateway-server,,,] 15716 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@482d776b: startup date [Thu Jan 02 11:21:25 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@28975c28
+2020-01-02 11:21:26.521  INFO [gateway-server,,,] 15716 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d764bebb-efa1-34de-a514-4d723f9456d0
+2020-01-02 11:21:26.534  INFO [gateway-server,,,] 15716 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-01-02 11:21:26.559  INFO [gateway-server,,,] 15716 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$690ad016] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-02 11:21:26.602  INFO [gateway-server,,,] 15716 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$dfe0afab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-02 11:21:26.664  INFO [gateway-server,,,] 15716 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$a504581a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-02 11:21:26.788  INFO [gateway-server,,,] 15716 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-02 11:21:26.793  INFO [gateway-server,,,] 15716 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$d4cbb829] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-02 11:21:26.812  INFO [gateway-server,,,] 15716 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$beb914e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-02 11:21:26.826  INFO [gateway-server,,,] 15716 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.zuul.TraceZuulAutoConfiguration' of type [org.springframework.cloud.sleuth.instrument.zuul.TraceZuulAutoConfiguration$$EnhancerBySpringCGLIB$$e1a02783] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-02 11:21:27.155  INFO [gateway-server,,,] 15716 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8763 (http)
+2020-01-02 11:21:27.162  INFO [gateway-server,,,] 15716 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-02 11:21:27.163  INFO [gateway-server,,,] 15716 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-01-02 11:21:27.287  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-02 11:21:27.287  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1570 ms
+2020-01-02 11:21:28.606  WARN [gateway-server,,,] 15716 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-02 11:21:28.606  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-02 11:21:28.610  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5a0e9142
+2020-01-02 11:21:29.341  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2020-01-02 11:21:29.342  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-02 11:21:29.342  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2020-01-02 11:21:29.342  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-02 11:21:29.342  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-02 11:21:29.342  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-02 11:21:29.342  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2020-01-02 11:21:29.343  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2020-01-02 11:21:29.343  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'zuulServlet' to [/zuul/*]
+2020-01-02 11:21:29.344  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-01-02 11:21:29.356  INFO [gateway-server,,,] 15716 --- [localhost-startStop-1] o.s.c.n.zuul.ZuulFilterInitializer       : Starting filter initializer context listener
+2020-01-02 11:21:30.077  INFO [gateway-server,,,] 15716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2020-01-02 11:21:30.346  INFO [gateway-server,,,] 15716 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@482d776b: startup date [Thu Jan 02 11:21:25 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@28975c28
+2020-01-02 11:21:30.449  INFO [gateway-server,,,] 15716 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-02 11:21:30.450  INFO [gateway-server,,,] 15716 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-02 11:21:30.516  INFO [gateway-server,,,] 15716 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 11:21:30.516  INFO [gateway-server,,,] 15716 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 11:21:30.587  INFO [gateway-server,,,] 15716 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-02 11:21:31.402  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.403  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2020-01-02 11:21:31.403  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2020-01-02 11:21:31.404  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2020-01-02 11:21:31.404  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.405  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.406  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2020-01-02 11:21:31.406  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.406  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2020-01-02 11:21:31.407  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2020-01-02 11:21:31.407  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.409  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.409  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2020-01-02 11:21:31.410  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.410  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.411  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2020-01-02 11:21:31.412  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.412  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2020-01-02 11:21:31.413  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2020-01-02 11:21:31.413  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.414  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2020-01-02 11:21:31.414  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2020-01-02 11:21:31.415  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.415  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/routes || /routes.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.netflix.zuul.RoutesMvcEndpoint.reset()
+2020-01-02 11:21:31.415  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/routes || /routes.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.416  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-02 11:21:31.416  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2020-01-02 11:21:31.417  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2020-01-02 11:21:31.418  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2020-01-02 11:21:31.418  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2020-01-02 11:21:31.418  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2020-01-02 11:21:31.419  INFO [gateway-server,,,] 15716 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2020-01-02 11:21:31.652  WARN [gateway-server,,,] 15716 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-02 11:21:31.652  INFO [gateway-server,,,] 15716 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-02 11:21:31.794  INFO [gateway-server,,,] 15716 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2020-01-02 11:21:31.888  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-01-02 11:21:31.895  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'zuulEndpoint' has been autodetected for JMX exposure
+2020-01-02 11:21:31.895  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'zuulMvcEndpoint' has been autodetected for JMX exposure
+2020-01-02 11:21:31.897  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-01-02 11:21:31.897  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-01-02 11:21:31.899  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-01-02 11:21:31.899  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2020-01-02 11:21:31.899  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2020-01-02 11:21:31.900  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2020-01-02 11:21:31.901  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-01-02 11:21:31.903  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'zuulMvcEndpoint': registering with JMX server as MBean [org.springframework.cloud.netflix.zuul:name=zuulMvcEndpoint,type=RoutesMvcEndpoint]
+2020-01-02 11:21:31.914  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-01-02 11:21:31.919  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2020-01-02 11:21:31.925  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2020-01-02 11:21:31.928  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-01-02 11:21:31.935  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'zuulEndpoint': registering with JMX server as MBean [org.springframework.cloud.netflix.zuul:name=zuulEndpoint,type=RoutesEndpoint]
+2020-01-02 11:21:31.936  WARN [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with key 'zuulEndpoint' has been registered as an MBean but has no exposed attributes or operations
+2020-01-02 11:21:31.938  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=482d776b,type=ConfigurationPropertiesRebinder]
+2020-01-02 11:21:31.941  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-01-02 11:21:31.945  INFO [gateway-server,,,] 15716 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2020-01-02 11:21:32.347  INFO [gateway-server,,,] 15716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2020-01-02 11:21:32.351  INFO [gateway-server,,,] 15716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: jolokia:type=Config is already registered. Adding it with jolokia:type=Config,uuid=01010231-164d-47ee-8fc6-ea08a57f4139, but you should revise your setup in order to either use a qualifier or ensure, that only a single agent gets registered (otherwise history functionality might not work)
+2020-01-02 11:21:32.351  INFO [gateway-server,,,] 15716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Cannot register (legacy) MBean handler for config store with name jmx4perl:type=Config since it already exists. This is the case if another agent has been already started within the same JVM. The registration is skipped.
+2020-01-02 11:21:32.351  INFO [gateway-server,,,] 15716 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Jolokia Discovery MBean registration is skipped because there is already one registered.
+2020-01-02 11:21:32.416  INFO [gateway-server,,,] 15716 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-01-02 11:21:32.423  INFO [gateway-server,,,] 15716 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-01-02 11:21:32.455  INFO [gateway-server,,,] 15716 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-01-02 11:21:32.518  INFO [gateway-server,,,] 15716 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-01-02 11:21:32.519  INFO [gateway-server,,,] 15716 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-01-02 11:21:32.600  INFO [gateway-server,,,] 15716 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-01-02 11:21:32.601  INFO [gateway-server,,,] 15716 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-01-02 11:21:32.749  INFO [gateway-server,,,] 15716 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-02 11:21:32.993  INFO [gateway-server,,,] 15716 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-01-02 11:21:32.993  INFO [gateway-server,,,] 15716 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-01-02 11:21:32.993  INFO [gateway-server,,,] 15716 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-01-02 11:21:32.993  INFO [gateway-server,,,] 15716 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-01-02 11:21:32.993  INFO [gateway-server,,,] 15716 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-01-02 11:21:32.993  INFO [gateway-server,,,] 15716 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-01-02 11:21:32.993  INFO [gateway-server,,,] 15716 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-01-02 11:21:33.233  INFO [gateway-server,,,] 15716 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-01-02 11:21:33.234  INFO [gateway-server,,,] 15716 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-01-02 11:21:33.236  INFO [gateway-server,,,] 15716 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-01-02 11:21:33.238  INFO [gateway-server,,,] 15716 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1577935293238 with initial instances count: 0
+2020-01-02 11:21:33.266  INFO [gateway-server,,,] 15716 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application gateway-server with eureka with status UP
+2020-01-02 11:21:33.267  INFO [gateway-server,,,] 15716 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1577935293267, current=UP, previous=STARTING]
+2020-01-02 11:21:33.269  INFO [gateway-server,,,] 15716 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY-SERVER/Ryan:gateway-server:8763: registering service...
+2020-01-02 11:21:33.323  INFO [gateway-server,,,] 15716 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-01-02 11:21:33.326  INFO [gateway-server,,,] 15716 --- [main] ration$HystrixMetricsPollerConfiguration : Starting poller
+2020-01-02 11:21:33.354  INFO [gateway-server,,,] 15716 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_GATEWAY-SERVER/Ryan:gateway-server:8763 - registration status: 204
+2020-01-02 11:21:33.379  INFO [gateway-server,,,] 15716 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8763 (http)
+2020-01-02 11:21:33.379  INFO [gateway-server,,,] 15716 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8763
+2020-01-02 11:21:33.384  INFO [gateway-server,,,] 15716 --- [main] c.r.g.GatewayServerApplication           : Started GatewayServerApplication in 10.434 seconds (JVM running for 11.41)
+2020-01-02 11:21:33.961  INFO [gateway-server,,,] 15716 --- [RMI TCP Connection(7)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-01-02 11:21:34.022  INFO [gateway-server,,,] 15716 --- [RMI TCP Connection(7)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#66b25fcd:0/SimpleConnection@3aa00515 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 34363]
+2020-01-02 11:21:34.061  INFO [gateway-server,,,] 15716 --- [RMI TCP Connection(7)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2020-01-02 11:21:34.583  INFO [gateway-server,,,] 15716 --- [RMI TCP Connection(7)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=gateway-server, profiles=[pro], label=null, version=null, state=null
+2020-01-02 11:22:03.236  INFO [gateway-server,,,] 15716 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-01-02 11:22:03.236  INFO [gateway-server,,,] 15716 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-01-02 11:22:03.237  INFO [gateway-server,,,] 15716 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-01-02 11:22:03.237  INFO [gateway-server,,,] 15716 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-01-02 11:22:03.237  INFO [gateway-server,,,] 15716 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-01-02 11:22:03.237  INFO [gateway-server,,,] 15716 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2020-01-02 11:22:03.237  INFO [gateway-server,,,] 15716 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-01-02 11:22:03.253  INFO [gateway-server,,,] 15716 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-01-02 11:26:33.002  INFO [gateway-server,,,] 15716 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-02 11:31:33.011  INFO [gateway-server,,,] 15716 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-02 11:36:33.020  INFO [gateway-server,,,] 15716 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-02 11:39:19.577  INFO [gateway-server,,,] 15716 --- [http-nio-8763-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-02 11:39:19.577  INFO [gateway-server,,,] 15716 --- [http-nio-8763-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-01-02 11:39:19.610  INFO [gateway-server,,,] 15716 --- [http-nio-8763-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2020-01-02 11:39:19.626  INFO [gateway-server,3aa7f397aa28b26d,3aa7f397aa28b26d,true] 15716 --- [http-nio-8763-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/demo1api/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2020-01-02 11:39:19.626  INFO [gateway-server,3aa7f397aa28b26d,3aa7f397aa28b26d,true] 15716 --- [http-nio-8763-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/demo2api/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2020-01-02 11:39:19.626  INFO [gateway-server,3aa7f397aa28b26d,3aa7f397aa28b26d,true] 15716 --- [http-nio-8763-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/demo1-service/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2020-01-02 11:39:19.626  INFO [gateway-server,3aa7f397aa28b26d,3aa7f397aa28b26d,true] 15716 --- [http-nio-8763-exec-1] o.s.c.n.zuul.web.ZuulHandlerMapping      : Mapped URL path [/demo2-service/**] onto handler of type [class org.springframework.cloud.netflix.zuul.web.ZuulController]
+2020-01-02 11:39:19.712  INFO [gateway-server,3aa7f397aa28b26d,bc737ae3d30aef43,true] 15716 --- [http-nio-8763-exec-1] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4f0aaf00: startup date [Thu Jan 02 11:39:19 CST 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@482d776b
+2020-01-02 11:39:19.771  INFO [gateway-server,3aa7f397aa28b26d,bc737ae3d30aef43,true] 15716 --- [http-nio-8763-exec-1] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-01-02 11:39:20.013  INFO [gateway-server,3aa7f397aa28b26d,bc737ae3d30aef43,true] 15716 --- [http-nio-8763-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: demo1-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-01-02 11:39:20.034  INFO [gateway-server,3aa7f397aa28b26d,bc737ae3d30aef43,true] 15716 --- [http-nio-8763-exec-1] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-demo1-service
+2020-01-02 11:39:20.050  INFO [gateway-server,3aa7f397aa28b26d,bc737ae3d30aef43,true] 15716 --- [http-nio-8763-exec-1] c.netflix.loadbalancer.BaseLoadBalancer  : Client: demo1-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=demo1-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-01-02 11:39:20.066  INFO [gateway-server,3aa7f397aa28b26d,bc737ae3d30aef43,true] 15716 --- [http-nio-8763-exec-1] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-01-02 11:39:20.086  INFO [gateway-server,3aa7f397aa28b26d,bc737ae3d30aef43,true] 15716 --- [http-nio-8763-exec-1] c.netflix.config.ChainedDynamicProperty  : Flipping property: demo1-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-01-02 11:39:20.087  INFO [gateway-server,3aa7f397aa28b26d,bc737ae3d30aef43,true] 15716 --- [http-nio-8763-exec-1] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client demo1-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=demo1-service,current list of Servers=[Ryan:8861],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:Ryan:8861;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@2f7c2e86
+2020-01-02 11:39:21.068  INFO [gateway-server,,,] 15716 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: demo1-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-01-02 11:39:23.122  WARN [gateway-server,,,] 15716 --- [AsyncReporter(org.springframework.cloud.sleuth.zipkin.RestTemplateSender@4c2b790f)] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 2 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:674) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:636) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:598) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.post(RestTemplateSender.java:73) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.sendSpans(RestTemplateSender.java:46) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at zipkin.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:228) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder.lambda$build$0(AsyncReporter.java:153) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder$$Lambda$1.run(Unknown Source) [zipkin-reporter-0.6.12.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_181]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_181]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_181]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_181]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984) ~[na:1.8.0_181]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 8 common frames omitted
+
+2020-01-02 11:39:31.128  WARN [gateway-server,,,] 15716 --- [AsyncReporter(org.springframework.cloud.sleuth.zipkin.RestTemplateSender@4c2b790f)] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:674) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:636) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:598) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.post(RestTemplateSender.java:73) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.sendSpans(RestTemplateSender.java:46) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at zipkin.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:228) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder.lambda$build$0(AsyncReporter.java:153) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder$$Lambda$1.run(Unknown Source) [zipkin-reporter-0.6.12.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_181]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_181]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_181]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_181]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984) ~[na:1.8.0_181]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 8 common frames omitted
+
+2020-01-02 11:39:33.138  WARN [gateway-server,,,] 15716 --- [AsyncReporter(org.springframework.cloud.sleuth.zipkin.RestTemplateSender@4c2b790f)] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:674) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:636) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:598) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.post(RestTemplateSender.java:73) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.sendSpans(RestTemplateSender.java:46) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at zipkin.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:228) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder.lambda$build$0(AsyncReporter.java:153) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder$$Lambda$1.run(Unknown Source) [zipkin-reporter-0.6.12.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_181]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_181]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_181]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_181]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984) ~[na:1.8.0_181]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 8 common frames omitted
+
+2020-01-02 11:39:46.451  INFO [gateway-server,f082ce2be6953caa,8d3adaf5969ac427,true] 15716 --- [http-nio-8763-exec-5] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@281fdc5: startup date [Thu Jan 02 11:39:46 CST 2020]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@482d776b
+2020-01-02 11:39:46.467  INFO [gateway-server,f082ce2be6953caa,8d3adaf5969ac427,true] 15716 --- [http-nio-8763-exec-5] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-01-02 11:39:46.476  INFO [gateway-server,f082ce2be6953caa,8d3adaf5969ac427,true] 15716 --- [http-nio-8763-exec-5] c.netflix.config.ChainedDynamicProperty  : Flipping property: demo2-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-01-02 11:39:46.480  INFO [gateway-server,f082ce2be6953caa,8d3adaf5969ac427,true] 15716 --- [http-nio-8763-exec-5] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-demo2-service
+2020-01-02 11:39:46.480  INFO [gateway-server,f082ce2be6953caa,8d3adaf5969ac427,true] 15716 --- [http-nio-8763-exec-5] c.netflix.loadbalancer.BaseLoadBalancer  : Client: demo2-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=demo2-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2020-01-02 11:39:46.483  INFO [gateway-server,f082ce2be6953caa,8d3adaf5969ac427,true] 15716 --- [http-nio-8763-exec-5] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2020-01-02 11:39:46.484  INFO [gateway-server,f082ce2be6953caa,8d3adaf5969ac427,true] 15716 --- [http-nio-8763-exec-5] c.netflix.config.ChainedDynamicProperty  : Flipping property: demo2-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-01-02 11:39:46.485  INFO [gateway-server,f082ce2be6953caa,8d3adaf5969ac427,true] 15716 --- [http-nio-8763-exec-5] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client demo2-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=demo2-service,current list of Servers=[Ryan:8862],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:Ryan:8862;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@5963727a
+2020-01-02 11:39:47.484  INFO [gateway-server,,,] 15716 --- [PollingServerListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: demo2-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2020-01-02 11:39:48.135  WARN [gateway-server,,,] 15716 --- [AsyncReporter(org.springframework.cloud.sleuth.zipkin.RestTemplateSender@4c2b790f)] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:674) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:636) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:598) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.post(RestTemplateSender.java:73) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.sendSpans(RestTemplateSender.java:46) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at zipkin.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:228) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder.lambda$build$0(AsyncReporter.java:153) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder$$Lambda$1.run(Unknown Source) [zipkin-reporter-0.6.12.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_181]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_181]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_181]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_181]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984) ~[na:1.8.0_181]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 8 common frames omitted
+
+2020-01-02 11:39:50.138  WARN [gateway-server,,,] 15716 --- [AsyncReporter(org.springframework.cloud.sleuth.zipkin.RestTemplateSender@4c2b790f)] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:674) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:636) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:598) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.post(RestTemplateSender.java:73) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.sendSpans(RestTemplateSender.java:46) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at zipkin.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:228) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder.lambda$build$0(AsyncReporter.java:153) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder$$Lambda$1.run(Unknown Source) [zipkin-reporter-0.6.12.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_181]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_181]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_181]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_181]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984) ~[na:1.8.0_181]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 8 common frames omitted
+

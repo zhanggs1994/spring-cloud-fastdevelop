@@ -4,9 +4,13 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+
+import javax.servlet.http.HttpSession;
 
 /**
  * @Description Description
@@ -37,5 +41,13 @@ public class TestControl {
 
     public String hiError() {
         return "hiError sorry , error ！";
+    }
+
+
+    @GetMapping("getSession")
+    @ResponseBody
+    public String getSession(HttpSession session) {
+        String name = String.valueOf(session.getAttribute("testsessionset"));
+        return " get testsessionset:"+name;
     }
 }
