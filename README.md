@@ -40,7 +40,13 @@ Server 注册的其他服务需要加上 Actuator 起步依赖 spring-boot-start
 enabled 设置为 false 。 
   - localhost:8766/  打开 admin-server 的界面 ,“ APPLICATIONS ’‘ 选项展示了 向 Eureka Server 注册的所有客户端实例 ， “ JOURNAL ＂选项为服务注册、 下线 、 剔除的时间线。“ ABOUT ” 选项是关于 Spring Boot Admin 的一些介绍。其 中， 在 “ APPLICATIONS ”选项 的界面展示的客户端实例右侧有一个“ Details ＂ 按钮， 单击该按钮，可以进入客户端实例的详细界面 。 在详细界面可 以查看客户端实例的信息 、 日志信息、指标信息 、 环境信息、日志
 级别管理和JMX 等。 
-  - 添加登陆页   http://localhost:8866  admin 123456
+  - 添加登陆页   http://localhost:8766  admin 123456
+* 8767 全局日志服务  
+
+  *  日志服务负责解释rabbitmq 发送的保存日志消息，存取消息至数据库
+  * 配置了mybatis-generate 逆向工程用来生成mybatis快速开发实体
+  * 日志客户端需配置rabbit相关、集成aop、rabbit发送、日志相关服务  
+  * @SysLogger("")为标记日志注解
 
 ### 业务配置
 
@@ -62,11 +68,10 @@ enabled 设置为 false 。
 ### 注册中心服务注册情况
   | Application        | AMIs        | Availability Zones | Status                                                       |
 | :----------------- | :---------- | :----------------- | :----------------------------------------------------------- |
-| **ADMIN-SERVER**   | **n/a** (1) | (1)                | **UP** (1) - [Ryan:admin-server:8766](http://ryan:8766/info) |
-| **DEMO1-SERVICE**  | **n/a** (1) | (1)                | **UP** (1) - [Ryan:demo1-service:8861](http://ryan:8861/info) |
-| **DEMO2-SERVICE**  | **n/a** (2) | (2)                | **UP** (2) - [Ryan:demo2-service:8863](http://ryan:8863/info) , [Ryan:demo2-service:8862](http://ryan:8862/info) |
-| **GATEWAY-SERVER** | **n/a** (1) | (1)                | **UP** (1) - [Ryan:gateway-server:8763](http://ryan:8763/info) |
-| **MONITOR-SERVER** | **n/a** (1) | (1)                | **UP** (1) - [Ryan:monitor-server:8765](http://ryan:8765/info) |
-| **ZIPKIN-SERVER**  | **n/a** (1) | (1)                | **UP** (1) - [Ryan:zipkin-server:8764](http://ryan:8764/info) |
-
-   
+| **ADMIN-SERVER**   | **n/a** (1) | (1)  | **UP** (1) - [Ryan:admin-server:8766](http://ryan:8766/info) |
+| **DEMO1-SERVICE**  | **n/a** (1) | (1)  | **UP** (1) - [Ryan:demo1-service:8861](http://ryan:8861/info) |
+| **DEMO2-SERVICE**  | **n/a** (2) | (2)  | **UP** (2) - [Ryan:demo2-service:8863](http://ryan:8863/info) , [Ryan:demo2-service:8862](http://ryan:8862/info) |
+| **GATEWAY-SERVER** | **n/a** (1) | (1)  | **UP** (1) - [Ryan:gateway-server:8763](http://ryan:8763/info) |
+| **LOGGER-SERVER**  | **n/a** (1) | (1)  | **UP** (1) - [Ryan:logger-server:8767](http://ryan:8767/info) |
+| **MONITOR-SERVER** | **n/a** (1) | (1)  | **UP** (1) - [Ryan:monitor-server:8765](http://ryan:8765/info) |
+| **ZIPKIN-SERVER**  | **n/a** (1) | (1)  | **UP** (1) - [Ryan:zipkin-server:8764](http://ryan:8764/info) |
