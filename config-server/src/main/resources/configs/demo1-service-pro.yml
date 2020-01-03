@@ -29,7 +29,6 @@ spring:
         max-idle: 200
         min-idle: 0
         max-active: 300
-        max-active: 300
         max-wait: 300
     timeout: 5000
     host: 127.0.0.1
