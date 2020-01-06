@@ -1,4 +1,4 @@
 server:
   port: 8764
-logging:
-  file: "logs/zipkin-server.log"
+#logging:
+#  file: "logs/zipkin-server.log"

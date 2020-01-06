@@ -41,5 +41,5 @@ spring:
     sampler :
       percentage : 1.0
 
-logging :
-  file: "logs/gateway-server.log"
+#logging :
+#  file: "logs/gateway-server.log"

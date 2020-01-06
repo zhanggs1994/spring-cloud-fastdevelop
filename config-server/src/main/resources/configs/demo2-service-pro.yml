@@ -46,8 +46,8 @@ spring:
 #      ddl-auto: update
 #    show-sql: true
 
-logging :
-  file: "logs/demo2-service.log"
+#logging :
+#  path: "./logs/demo2-service"
 
 
 

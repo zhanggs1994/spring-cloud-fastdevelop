@@ -10,5 +10,5 @@ turbine:
 management:
   security:
     enabled: false
-logging:
-  file: "logs/monitor-server.log"
+#logging:
+#  file: "logs/monitor-server.log"

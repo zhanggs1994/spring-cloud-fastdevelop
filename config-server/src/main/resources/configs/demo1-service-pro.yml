@@ -48,8 +48,8 @@ spring:
 #    show-sql: true
 
 # admin server logging file
-logging :
-  file: "logs/demo1-service.log"
+#logging :
+#  path: "./logs/demo1-service"
 
 
 

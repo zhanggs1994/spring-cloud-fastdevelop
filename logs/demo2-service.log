@@ -2052,3 +2052,221 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
 	... 8 common frames omitted
 
+2020-01-03 14:24:39.981  INFO [demo2-service,,,] 9508 --- [main] c.r.d.Demo3ServiceApplication            : The following profiles are active: pro2
+2020-01-03 14:24:40.016  INFO [demo2-service,,,] 9508 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24faea88: startup date [Fri Jan 03 14:24:40 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@609db43b
+2020-01-03 14:24:40.776  INFO [demo2-service,,,] 9508 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5c4fdb77-15bf-3020-9c47-dc3716f7a2a5
+2020-01-03 14:24:40.789  INFO [demo2-service,,,] 9508 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-01-03 14:24:40.815  INFO [demo2-service,,,] 9508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$a6296201] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-03 14:24:40.853  INFO [demo2-service,,,] 9508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport' of type [org.springframework.cloud.sleuth.instrument.async.AsyncDefaultAutoConfiguration$DefaultAsyncConfigurerSupport$$EnhancerBySpringCGLIB$$1cff4196] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-03 14:24:40.912  INFO [demo2-service,,,] 9508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration' of type [org.springframework.cloud.sleuth.annotation.SleuthAnnotationAutoConfiguration$$EnhancerBySpringCGLIB$$e222ea05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-03 14:24:41.038  INFO [demo2-service,,,] 9508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sleuthAdvisorConfig' of type [org.springframework.cloud.sleuth.annotation.SleuthAdvisorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-03 14:24:41.042  INFO [demo2-service,,,] 9508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration' of type [org.springframework.cloud.netflix.metrics.MetricsInterceptorConfiguration$MetricsRestTemplateConfiguration$$EnhancerBySpringCGLIB$$11ea4a14] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-03 14:24:41.058  INFO [demo2-service,,,] 9508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$fbd7a6d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-03 14:24:41.072  INFO [demo2-service,,,] 9508 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.web.client.feign.TraceFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.feign.TraceFeignClientAutoConfiguration$FeignBeanPostProcessorConfiguration$$EnhancerBySpringCGLIB$$1f4f7c99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-03 14:24:41.368  INFO [demo2-service,,,] 9508 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8863 (http)
+2020-01-03 14:24:41.376  INFO [demo2-service,,,] 9508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-03 14:24:41.377  INFO [demo2-service,,,] 9508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.27
+2020-01-03 14:24:41.514  INFO [demo2-service,,,] 9508 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-03 14:24:41.514  INFO [demo2-service,,,] 9508 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1498 ms
+2020-01-03 14:24:42.219  INFO [demo2-service,,,] 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2020-01-03 14:24:42.220  INFO [demo2-service,,,] 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-03 14:24:42.220  INFO [demo2-service,,,] 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'traceFilter' to: [/*]
+2020-01-03 14:24:42.220  INFO [demo2-service,,,] 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-03 14:24:42.220  INFO [demo2-service,,,] 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-03 14:24:42.220  INFO [demo2-service,,,] 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-03 14:24:42.220  INFO [demo2-service,,,] 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2020-01-03 14:24:42.220  INFO [demo2-service,,,] 9508 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2020-01-03 14:24:42.220  INFO [demo2-service,,,] 9508 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'proxyStreamServlet' to [/proxy.stream]
+2020-01-03 14:24:42.221  INFO [demo2-service,,,] 9508 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-01-03 14:24:42.482  INFO [demo2-service,,,] 9508 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24faea88: startup date [Fri Jan 03 14:24:40 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@609db43b] and template loader path [classpath:/templates/]
+2020-01-03 14:24:42.483  INFO [demo2-service,,,] 9508 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-01-03 14:24:43.028  WARN [demo2-service,,,] 9508 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-03 14:24:43.029  INFO [demo2-service,,,] 9508 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-03 14:24:43.032  INFO [demo2-service,,,] 9508 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3e1f1046
+2020-01-03 14:24:43.514  INFO [demo2-service,,,] 9508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2020-01-03 14:24:43.807  INFO [demo2-service,,,] 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@24faea88: startup date [Fri Jan 03 14:24:40 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@609db43b
+2020-01-03 14:24:43.906  INFO [demo2-service,,,] 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/hi]}" onto public java.lang.String com.rjmgr.demo3service.web.TestControl.hi()
+2020-01-03 14:24:43.907  INFO [demo2-service,,,] 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/hi2]}" onto public java.lang.String com.rjmgr.demo3service.web.TestControl.hi2()
+2020-01-03 14:24:43.910  INFO [demo2-service,,,] 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix/{path}]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.monitor(java.lang.String,org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2020-01-03 14:24:43.911  INFO [demo2-service,,,] 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hystrix]}" onto public java.lang.String org.springframework.cloud.netflix.hystrix.dashboard.HystrixDashboardController.home(org.springframework.ui.Model,org.springframework.web.context.request.WebRequest)
+2020-01-03 14:24:43.915  INFO [demo2-service,,,] 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-03 14:24:43.916  INFO [demo2-service,,,] 9508 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-03 14:24:43.991  INFO [demo2-service,,,] 9508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-03 14:24:43.992  INFO [demo2-service,,,] 9508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-03 14:24:44.066  INFO [demo2-service,,,] 9508 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-03 14:24:44.941  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/resume || /resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2020-01-03 14:24:44.942  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-03 14:24:44.943  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-03 14:24:44.943  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-03 14:24:44.944  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.setStatus(java.lang.String)
+2020-01-03 14:24:44.944  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/service-registry/instance-status],methods=[GET]}" onto public org.springframework.http.ResponseEntity org.springframework.cloud.client.serviceregistry.endpoint.ServiceRegistryEndpoint.getStatus()
+2020-01-03 14:24:44.945  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-03 14:24:44.945  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2020-01-03 14:24:44.946  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/pause || /pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2020-01-03 14:24:44.946  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2020-01-03 14:24:44.948  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2020-01-03 14:24:44.948  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-03 14:24:44.949  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2020-01-03 14:24:44.950  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2020-01-03 14:24:44.950  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-03 14:24:44.951  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2020-01-03 14:24:44.951  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2020-01-03 14:24:44.952  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2020-01-03 14:24:44.952  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/hystrix.stream/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.cloud.netflix.endpoint.ServletWrappingEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2020-01-03 14:24:44.952  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/restart || /restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2020-01-03 14:24:44.953  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/jolokia/**]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.endpoint.mvc.JolokiaMvcEndpoint.handle(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2020-01-03 14:24:44.954  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2020-01-03 14:24:44.954  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-03 14:24:44.954  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-03 14:24:44.955  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2020-01-03 14:24:44.955  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-03 14:24:44.955  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/refresh || /refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2020-01-03 14:24:44.955  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-03 14:24:44.956  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/archaius || /archaius.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-03 14:24:44.956  INFO [demo2-service,,,] 9508 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/features || /features.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-01-03 14:24:45.266  WARN [demo2-service,,,] 9508 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-01-03 14:24:45.266  INFO [demo2-service,,,] 9508 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-03 14:24:45.449  INFO [demo2-service,,,] 9508 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2020-01-03 14:24:45.545  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-01-03 14:24:45.553  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-01-03 14:24:45.554  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2020-01-03 14:24:45.555  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-01-03 14:24:45.556  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2020-01-03 14:24:45.556  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2020-01-03 14:24:45.557  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'serviceRegistryEndpoint' has been autodetected for JMX exposure
+2020-01-03 14:24:45.558  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-01-03 14:24:45.560  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-01-03 14:24:45.570  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2020-01-03 14:24:45.577  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'serviceRegistryEndpoint': registering with JMX server as MBean [org.springframework.cloud.client.serviceregistry.endpoint:name=serviceRegistryEndpoint,type=ServiceRegistryEndpoint]
+2020-01-03 14:24:45.583  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-01-03 14:24:45.591  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=24faea88,type=ConfigurationPropertiesRebinder]
+2020-01-03 14:24:45.596  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2020-01-03 14:24:45.601  INFO [demo2-service,,,] 9508 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2020-01-03 14:24:46.023  INFO [demo2-service,,,] 9508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: No access restrictor found, access to any MBean is allowed
+2020-01-03 14:24:46.026  INFO [demo2-service,,,] 9508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: jolokia:type=Config is already registered. Adding it with jolokia:type=Config,uuid=4b352bc5-a56b-4b46-8908-af3879777396, but you should revise your setup in order to either use a qualifier or ensure, that only a single agent gets registered (otherwise history functionality might not work)
+2020-01-03 14:24:46.026  INFO [demo2-service,,,] 9508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Cannot register (legacy) MBean handler for config store with name jmx4perl:type=Config since it already exists. This is the case if another agent has been already started within the same JVM. The registration is skipped.
+2020-01-03 14:24:46.026  INFO [demo2-service,,,] 9508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : jolokia: Jolokia Discovery MBean registration is skipped because there is already one registered.
+2020-01-03 14:24:46.085  INFO [demo2-service,,,] 9508 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-01-03 14:24:46.090  INFO [demo2-service,,,] 9508 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-01-03 14:24:46.117  INFO [demo2-service,,,] 9508 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-01-03 14:24:46.496  INFO [demo2-service,,,] 9508 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-01-03 14:24:46.496  INFO [demo2-service,,,] 9508 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-01-03 14:24:46.562  INFO [demo2-service,,,] 9508 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-01-03 14:24:46.562  INFO [demo2-service,,,] 9508 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-01-03 14:24:46.684  INFO [demo2-service,,,] 9508 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 14:24:46.901  INFO [demo2-service,,,] 9508 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-01-03 14:24:46.901  INFO [demo2-service,,,] 9508 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-01-03 14:24:46.901  INFO [demo2-service,,,] 9508 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-01-03 14:24:46.901  INFO [demo2-service,,,] 9508 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-01-03 14:24:46.901  INFO [demo2-service,,,] 9508 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-01-03 14:24:46.901  INFO [demo2-service,,,] 9508 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-01-03 14:24:46.901  INFO [demo2-service,,,] 9508 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-01-03 14:24:46.985  INFO [demo2-service,,,] 9508 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-01-03 14:24:46.986  INFO [demo2-service,,,] 9508 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-01-03 14:24:46.988  INFO [demo2-service,,,] 9508 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-01-03 14:24:46.990  INFO [demo2-service,,,] 9508 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1578032686990 with initial instances count: 2
+2020-01-03 14:24:47.011  INFO [demo2-service,,,] 9508 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application demo2-service with eureka with status UP
+2020-01-03 14:24:47.011  INFO [demo2-service,,,] 9508 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1578032687011, current=UP, previous=STARTING]
+2020-01-03 14:24:47.013  INFO [demo2-service,,,] 9508 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEMO2-SERVICE/Ryan:demo2-service:8863: registering service...
+2020-01-03 14:24:47.042  INFO [demo2-service,,,] 9508 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_DEMO2-SERVICE/Ryan:demo2-service:8863 - registration status: 204
+2020-01-03 14:24:47.049  INFO [demo2-service,,,] 9508 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-01-03 14:24:47.052  INFO [demo2-service,,,] 9508 --- [main] ration$HystrixMetricsPollerConfiguration : Starting poller
+2020-01-03 14:24:47.111  INFO [demo2-service,,,] 9508 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8863 (http)
+2020-01-03 14:24:47.112  INFO [demo2-service,,,] 9508 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8863
+2020-01-03 14:24:47.118  INFO [demo2-service,,,] 9508 --- [main] c.r.d.Demo3ServiceApplication            : Started Demo3ServiceApplication in 12.921 seconds (JVM running for 14.174)
+2020-01-03 14:24:47.922  INFO [demo2-service,,,] 9508 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [localhost:5672]
+2020-01-03 14:24:47.980  INFO [demo2-service,,,] 9508 --- [RMI TCP Connection(2)-127.0.0.1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#10837274:0/SimpleConnection@4e18a538 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 5880]
+2020-01-03 14:24:48.047  INFO [demo2-service,,,] 9508 --- [RMI TCP Connection(2)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at: http://localhost:8762
+2020-01-03 14:24:48.533  INFO [demo2-service,,,] 9508 --- [RMI TCP Connection(2)-127.0.0.1] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=demo2-service, profiles=[pro2], label=null, version=null, state=null
+2020-01-03 14:27:44.709  INFO [demo2-service,,,] 9508 --- [http-nio-8863-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-01-03 14:27:44.709  INFO [demo2-service,,,] 9508 --- [http-nio-8863-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-01-03 14:27:44.744  INFO [demo2-service,,,] 9508 --- [http-nio-8863-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2020-01-03 14:27:47.063  WARN [demo2-service,,,] 9508 --- [AsyncReporter(org.springframework.cloud.sleuth.zipkin.RestTemplateSender@55a3c82e)] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:674) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:636) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:598) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.post(RestTemplateSender.java:73) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.sendSpans(RestTemplateSender.java:46) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at zipkin.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:228) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder.lambda$build$0(AsyncReporter.java:153) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder$$Lambda$1.run(Unknown Source) [zipkin-reporter-0.6.12.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_181]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_181]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_181]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_181]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984) ~[na:1.8.0_181]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 8 common frames omitted
+
+2020-01-03 14:27:54.067  WARN [demo2-service,,,] 9508 --- [AsyncReporter(org.springframework.cloud.sleuth.zipkin.RestTemplateSender@55a3c82e)] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect)
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:8764/api/v1/spans": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:674) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:636) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:598) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.post(RestTemplateSender.java:73) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin.RestTemplateSender.sendSpans(RestTemplateSender.java:46) ~[spring-cloud-sleuth-zipkin-1.2.0.RELEASE.jar:1.2.0.RELEASE]
+	at zipkin.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:228) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder.lambda$build$0(AsyncReporter.java:153) [zipkin-reporter-0.6.12.jar:na]
+	at zipkin.reporter.AsyncReporter$Builder$$Lambda$1.run(Unknown Source) [zipkin-reporter-0.6.12.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method) ~[na:1.8.0_181]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_181]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_181]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[na:1.8.0_181]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_181]
+	at java.net.Socket.connect(Socket.java:538) ~[na:1.8.0_181]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_181]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050) ~[na:1.8.0_181]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984) ~[na:1.8.0_181]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:78) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:660) ~[spring-web-4.3.14.RELEASE.jar:4.3.14.RELEASE]
+	... 8 common frames omitted
+
+2020-01-03 14:29:46.911  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 14:34:46.920  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 14:39:46.928  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 14:44:46.936  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 14:49:46.945  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 14:54:46.954  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 14:59:46.962  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 15:04:46.970  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 15:09:46.978  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 15:14:46.987  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 15:19:46.996  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 15:24:47.004  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-01-03 15:29:47.012  INFO [demo2-service,,,] 9508 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

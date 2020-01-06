@@ -44,5 +44,5 @@ mybatis:
   config-location: classpath:mybatis/mybatis-config.xml
   # 指定sql映射文件位置
   mapper-locations: classpath:mybatis/mapper/*.xml
-logging:
-  file: "logs/logger-server.log"
+#logging:
+#  file: "logs/logger-server.log"

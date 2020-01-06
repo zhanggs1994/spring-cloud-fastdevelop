@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+    <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 -->
+    <property name="LOG_HOME" value="E:/rjmgr_micro_service_logs/demo1-service/" />
+    <property name="AppName" value="demo1-service" />
+    <!-- 控制台输出 -->
+    <!-- %m输出的信息,%p日志级别,%t线程名,%d日期,%c类的全名,%i索引【从数字0开始递增】,,, -->
+    <!-- appender是configuration的子节点，是负责写日志的组件。 -->
+    <!-- ConsoleAppender：把日志输出到控制台 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50}-%msg %n</pattern>
+            <!-- 控制台也要使用UTF-8，不要使用GBK，否则会中文乱码 -->
+            <!--<charset>UTF-8</charset>-->
+        </encoder>
+    </appender>
+    <!-- 设置分割 -->
+    <!-- RollingFileAppender：滚动记录文件，先将日志记录到指定文件，当符合某个条件时，将日志记录到其他文件 -->
+    <!-- 以下的大概意思是：1.先按日期存日志，日期变了，将前一天的日志文件名重命名为XXX%日期%索引 -->
+    <!--             2.如果日期没有发生变化，但是当前日志的文件大小超过指定大小，对当前日志进行分割 重命名-->
+    <appender name="FILE"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 设置按尺寸和时间（同时满足）分割 -->
+        <!-- rollingPolicy:当发生滚动时，决定 RollingFileAppender 的行为，涉及文件移动和重命名。 -->
+        <!-- TimeBasedRollingPolicy： 最常用的滚动策略，它根据时间来制定滚动策略，既负责滚动也负责出发滚动 -->
+        <rollingPolicy
+                class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- rollover daily -->
+            <fileNamePattern>${LOG_HOME}/${AppName}.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+
+            <!-- each file should be at most 10MB, keep 30 days worth of history,
+                but at most 3GB -->
+            <!--日志文件最大的大小-->
+            <maxFileSize>10MB</maxFileSize>
+            <!-- 每产生一个日志文件，该日志文件的保存期限为30天 -->
+            <maxHistory>60</maxHistory>
+            <!--文件总的大小-->
+            <totalSizeCap>3GB</totalSizeCap>
+        </rollingPolicy>
+        <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50}-%msg%n</pattern>
+            <!-- 记录日志的编码 -->
+            <!--<charset>UTF-8</charset> &lt;!&ndash; 此处设置字符集 &ndash;&gt;-->
+        </encoder>
+    </appender>
+    <!-- 控制台日志输出级别 INFO  trace<debug<info<warn<error -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="FILE" />
+    </root>
+
+    <!-- 指定项目中某个包，当有日志操作行为时的日志记录级别 -->
+    <!-- com.appley为根包，也就是只要是发生在这个根包下面的所有日志操作行为的权限都是DEBUG -->
+    <!-- 级别依次为【从高到低】：FATAL > ERROR > WARN > INFO > DEBUG > TRACE  -->
+    <!--<logger name="com.rjmgr" level="DEBUG">-->
+        <!--<appender-ref ref="syslog" />-->
+    <!--</logger>-->
+ <!---->
+</configuration>
